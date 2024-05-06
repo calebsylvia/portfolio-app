@@ -358,7 +358,7 @@ export default function Home() {
             </div>
             <div className="flex justify-evenly">
               <div className="">
-                <a href="https://proptrac-app.vercel.app/" target="_blank">
+                <a href="https://business-redesign.vercel.app/" target="_blank">
                   <Image
                     src={dantes}
                     alt="Dante's Pizza Thumbnail"
@@ -458,7 +458,7 @@ export default function Home() {
             </div>
             <div className="flex justify-evenly">
               <div className="">
-                <a href="https://proptrac-app.vercel.app/" target="_blank">
+                <a href="https://vercel.com/caleb-sylvias-projects/weather-sprint-x6mm" target="_blank">
                   <Image
                     src={weather}
                     alt="Weather App Thumbnail"
