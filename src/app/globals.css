@@ -87,3 +87,8 @@
   body{
     scroll-behavior: smooth;
   }
+  section span {
+    display: block;
+    transform: translateX(-100px);
+    opacity: 0;
+  }
