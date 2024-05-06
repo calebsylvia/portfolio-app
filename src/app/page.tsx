@@ -138,7 +138,7 @@ export default function Home() {
                   <div className="w-1/2 my-auto">
                   <SectionRight>
                       <p className="lato font-semibold text-3xl text-[#495464]">Business Redesign</p>
-                      <p className="roboto">Business Redesign was a project assigned to me and my partner to find a local business and try and revamp their website. We had come to the conclusion that a local business called Dante's Pizza could you a little more love on their website. We had built this site in standard HTML, CSS, and Javascript but further down the line we would like to rebuild it in Next.JS. This site was one of the top in our class for how well put together and designed it was. As of right now this webpage is strictly front end development but is scaleable to become full stack.</p>
+                      <p className="roboto">Business Redesign was a project assigned to me and my partner to find a local business and try and revamp their website. We had come to the conclusion that a local business called Dante&apos;s Pizza could you a little more love on their website. We had built this site in standard HTML, CSS, and Javascript but further down the line we would like to rebuild it in Next.JS. This site was one of the top in our class for how well put together and designed it was. As of right now this webpage is strictly front end development but is scaleable to become full stack.</p>
                       </SectionRight>
                   </div>
               </div>
