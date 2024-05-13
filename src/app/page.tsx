@@ -15,6 +15,7 @@ import {
   InstagramLogo,
   LinkedinLogo,
 } from "@phosphor-icons/react";
+import MobileNav from "./Components/MobileNav";
 
 function Section({ children }: any) {
   const ref = useRef(null);
@@ -96,7 +97,12 @@ export default function Home() {
   return (
     <>
       <div>
+        <div className="hidden md:block">
         <DesktopNav />
+        </div>
+        <div>
+          <MobileNav/>
+        </div>
 
         <div
           id="Top"
@@ -116,18 +122,18 @@ export default function Home() {
               </p>
             </div>
           </Section>
-          <div>
+          <div className="max-md:ml-8">
             <Headshot />
           </div>
         </div>
         <Divide />
         <div
           id="AboutMe"
-          className="w-full min-h-[500px] bg-[#495464] lg:flex justify-evenly px-20 xl:px-56"
+          className="w-full min-h-[500px] bg-[#495464] lg:flex justify-evenly px-10 md:px-20 xl:px-56"
         >
           <div className="flex">
             <Section>
-              <p className="lato text-7xl font-semibold text-[#E8E8E8] pt-12 lg:pt-20 w-1/3 max-lg:text-center">
+              <p className="lato text-5xl md:text-7xl font-semibold text-[#E8E8E8] pt-12 lg:pt-20 w-1/3 max-lg:text-center">
                 ABOUT <em className="text-[#B3C8CF]">CALEB</em>
               </p>
             </Section>
@@ -171,11 +177,11 @@ export default function Home() {
                   <Image
                     src={proptrac}
                     alt="PropTrac Thumbnail"
-                    className="w-[450px] xl:w-[500px] bg-[#BBBFCA] p-2 rounded-xl"
+                    className="w-[350px] md:w-[450px] xl:w-[500px] bg-[#BBBFCA] p-2 rounded-xl"
                   />
                 </a>
               </div>
-              <div className="w-1/2 my-auto max-lg:mx-auto max-lg:pt-5">
+              <div className="w-5/6 md:w-1/2 my-auto max-lg:mx-auto max-lg:pt-5">
                 <SectionRight>
                   <p className="lato font-semibold text-2xl xl:text-3xl text-[#495464]">
                     PropTrac (In Progress)
@@ -359,11 +365,11 @@ export default function Home() {
                   <Image
                     src={dantes}
                     alt="Dante's Pizza Thumbnail"
-                    className="w-[450px] xl:w-[500px] bg-[#BBBFCA] p-2 rounded-xl"
+                    className="w-[350px] md:w-[450px] xl:w-[500px] bg-[#BBBFCA] p-2 rounded-xl"
                   />
                 </a>
               </div>
-              <div className="w-1/2 max-lg:mx-auto my-auto">
+              <div className="w-5/6 md:w-1/2 max-lg:mx-auto my-auto">
                 <SectionRight>
                   <p className="lato font-semibold text-2xl xl:text-3xl text-[#495464] max-lg:pt-5">
                     Business Redesign
@@ -459,11 +465,11 @@ export default function Home() {
                   <Image
                     src={weather}
                     alt="Weather App Thumbnail"
-                    className="w-[450px] lg:w-[500px] bg-[#BBBFCA] p-2 rounded-xl"
+                    className="w-[350px] md:w-[450px] lg:w-[500px] bg-[#BBBFCA] p-2 rounded-xl"
                   />
                 </a>
               </div>
-              <div className="w-1/2 max-lg:mx-auto my-auto">
+              <div className="w-5/6 md:w-1/2 max-lg:mx-auto my-auto">
                 <SectionRight>
                   <p className="lato font-semibold text-2xl lg:text-3xl text-[#495464] max-lg:pt-5">
                     Weather App (React Build)
@@ -526,12 +532,12 @@ export default function Home() {
           </div>
         </div>
         <div id="Skills" className="min-h-[450px] bg-[#495464]">
-          <p className="text-5xl text-[#BBBFCA] font-semibold pt-5 ml-20">
+          <p className="text-5xl text-[#BBBFCA] font-semibold pt-8 md:pt-5 md:ml-20 max-md:text-center">
             Skills
           </p>
-          <div className="grid grid-cols-1 lg:grid-cols-3 grid-flow-row mx-20 pt-8 text-white">
+          <div className="grid grid-cols-1 lg:grid-cols-3 grid-flow-row mx-10 md:mx-20 pt-8 text-white">
             <div className="col-span-1">
-              <p className="text-center text-4xl font-semibold">Front-End</p>
+              <p className="text-center text-2xl md:text-4xl font-semibold">Front-End</p>
               <Section>
               <div className="flex justify-center space-x-5 my-24">
                 <svg
@@ -657,7 +663,7 @@ export default function Home() {
               </Section>
             </div>
             <div className="col-span-1">
-              <p className="text-center text-4xl font-semibold">Back-End</p>
+              <p className="text-center text-2xl md:text-4xl font-semibold">Back-End</p>
               <SectionUp>
               <div className="flex justify-center space-x-5 my-24">
                 <svg
@@ -808,7 +814,7 @@ export default function Home() {
               </SectionUp>
             </div>
             <div className="col-span-1">
-              <p className="text-center text-4xl font-semibold">Other</p>
+              <p className="text-center text-2xl md:text-4xl font-semibold">Other</p>
               <SectionRight>
               <div className="flex justify-center space-x-5 my-24">
                 <svg viewBox="0 0 128 128" width={"50px"}>
@@ -933,8 +939,8 @@ export default function Home() {
           </div>
         </div>
         <div id="ContactMe" className="min-h-[200px]">
-          <div className="mx-20 flex justify-between">
-            <div className="text-lg space-y-2 roboto my-6">
+          <div className="md:mx-20 flex justify-between">
+            <div className="text-base md:text-lg space-y-2 roboto my-6">
               <p className="text-2xl font-semibold">Caleb Sylvia</p>
               <p>Stockton, CA</p>
               <p>
