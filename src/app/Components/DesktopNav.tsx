@@ -49,7 +49,7 @@ const DesktopNav = () => {
               <NavigationMenuItem>
                 <NavigationMenuTrigger>More</NavigationMenuTrigger>
                 <NavigationMenuContent>
-                <ul className="grid gap-3 p-6 md:w-[250px] lg:w-[375px] grid-cols-3">
+                <ul className="grid gap-3 p-6 md:w-[375px] lg:w-[375px] grid-cols-3">
                   <li className="row-span-1">
                     <NavigationMenuLink asChild>
                       <a href="https://www.linkedin.com/in/calebsylvia/" target="_blank" className="flex h-full w-full select-none flex-row justify-end bg-gray-100 rounded-md p-2 no-underline outline-none hover:shadow-md space-x-1">

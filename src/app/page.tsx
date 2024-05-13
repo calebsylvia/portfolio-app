@@ -100,11 +100,11 @@ export default function Home() {
 
         <div
           id="Top"
-          className="w-full min-h-[800px] flex justify-between px-72"
+          className="w-full min-h-[600px] lg:min-h-[800px] flex max-md:flex-col md:justify-between px-10 lg:px-16 xl:px-60 2xl:px-72"
         >
           <Section>
-            <div className="mt-28">
-              <p className="lato text-9xl font-bold text-wrap w-1/2">
+            <div className="mt-16 md:mt-28">
+              <p className="lato text-3xl md:text-8xl lg:text-9xl font-bold text-wrap w-1/2">
                 Caleb Sylvia
               </p>
               <p className="late text-2xl font-bold pt-3">
@@ -123,18 +123,18 @@ export default function Home() {
         <Divide />
         <div
           id="AboutMe"
-          className="w-full min-h-[500px] bg-[#495464] flex justify-evenly px-56"
+          className="w-full min-h-[500px] bg-[#495464] lg:flex justify-evenly px-20 xl:px-56"
         >
           <div className="flex">
             <Section>
-              <p className="lato text-7xl font-semibold text-[#E8E8E8] pt-20 w-1/3">
+              <p className="lato text-7xl font-semibold text-[#E8E8E8] pt-12 lg:pt-20 w-1/3 max-lg:text-center">
                 ABOUT <em className="text-[#B3C8CF]">CALEB</em>
               </p>
             </Section>
           </div>
-          <div className="pt-28 pl-72">
+          <div className="lg:pt-16 2xl:pt-28 lg:pl-20 xl:pl-72">
             <SectionRight>
-              <p className="text-[#E8E8E8] w-full">
+              <p className="text-[#E8E8E8] w-full mt-5 lg:mt-0">
                 Hello, my name is Caleb Sylvia. I am 23 years old, located in
                 Stockton, California. I have lived in Stockton almost my entire
                 life except for the few years I lived in Washington when I was
@@ -143,15 +143,12 @@ export default function Home() {
                 On the side I enjoy playing video games with my friends, being
                 active in the gym, and listening to music. Some of my favorite
                 artists are Bryson Tiller, MarQ, Malcom Todd, Omar Apollo, and
-                many more. I love to go to concerts, one year I saw Omar Apollo
-                4 times within two months, concerts allow me to fully indulge
-                and experience the beauty of music. Fun fact I used to work to
-                work at Dutch Bros Coffee for 3 years which made me into a
+                many more. Fun fact I used to work to work at Dutch Bros Coffee for 3 years which made me into a
                 social butterfly and excellent at communicating although I was
                 incredibly socially awkward before then.
               </p>
               <br />
-              <p className="text-[#E8E8E8]">
+              <p className="text-[#E8E8E8] pb-10 2xl:pb-0">
                 Regarding Software Development I am very invested into my
                 studies and am looking forward into what the future holds for
                 myself. I am available for hire, for any questions regarding
@@ -164,26 +161,26 @@ export default function Home() {
           </div>
         </div>
         <div id="Projects" className="min-h-[750px]">
-          <div className="space-y-8 my-8">
+          <div className="space-y-12 lg:space-y-8 my-8">
             <p className="text-5xl font-semibold text-black text-center py-5">
               Projects
             </p>
-            <div className="flex justify-evenly">
-              <div className="">
+            <div className="flex max-lg:flex-col lg:justify-evenly">
+              <div className="max-lg:mx-auto">
                 <a href="https://proptrac-app.vercel.app/" target="_blank">
                   <Image
                     src={proptrac}
                     alt="PropTrac Thumbnail"
-                    className="w-[500px] bg-[#BBBFCA] p-2 rounded-xl"
+                    className="w-[450px] xl:w-[500px] bg-[#BBBFCA] p-2 rounded-xl"
                   />
                 </a>
               </div>
-              <div className="w-1/2 my-auto">
+              <div className="w-1/2 my-auto max-lg:mx-auto max-lg:pt-5">
                 <SectionRight>
-                  <p className="lato font-semibold text-3xl text-[#495464]">
+                  <p className="lato font-semibold text-2xl xl:text-3xl text-[#495464]">
                     PropTrac (In Progress)
                   </p>
-                  <p className="roboto">
+                  <p className="roboto max-xl:text-sm">
                     PropTrac is an all in one property management tool allowing
                     Property Managers to have full control of all their
                     properties no matter where they are listed. The site allows
@@ -356,22 +353,22 @@ export default function Home() {
                 </SectionRight>
               </div>
             </div>
-            <div className="flex justify-evenly">
-              <div className="">
+            <div className="flex max-lg:flex-col lg:justify-evenly">
+              <div className="max-lg:mx-auto">
                 <a href="https://business-redesign.vercel.app/" target="_blank">
                   <Image
                     src={dantes}
                     alt="Dante's Pizza Thumbnail"
-                    className="w-[500px] bg-[#BBBFCA] p-2 rounded-xl"
+                    className="w-[450px] xl:w-[500px] bg-[#BBBFCA] p-2 rounded-xl"
                   />
                 </a>
               </div>
-              <div className="w-1/2 my-auto">
+              <div className="w-1/2 max-lg:mx-auto my-auto">
                 <SectionRight>
-                  <p className="lato font-semibold text-3xl text-[#495464]">
+                  <p className="lato font-semibold text-2xl xl:text-3xl text-[#495464] max-lg:pt-5">
                     Business Redesign
                   </p>
-                  <p className="roboto">
+                  <p className="roboto max-xl:text-sm">
                     Business Redesign was a project assigned to me and my
                     partner to find a local business and try and revamp their
                     website. We had come to the conclusion that a local business
@@ -456,22 +453,22 @@ export default function Home() {
                 </SectionRight>
               </div>
             </div>
-            <div className="flex justify-evenly">
-              <div className="">
+            <div className="flex max-lg:flex-col lg:justify-evenly">
+              <div className="max-lg:mx-auto">
                 <a href="https://vercel.com/caleb-sylvias-projects/weather-sprint-x6mm" target="_blank">
                   <Image
                     src={weather}
                     alt="Weather App Thumbnail"
-                    className="w-[500px] bg-[#BBBFCA] p-2 rounded-xl"
+                    className="w-[450px] lg:w-[500px] bg-[#BBBFCA] p-2 rounded-xl"
                   />
                 </a>
               </div>
-              <div className="w-1/2 my-auto">
+              <div className="w-1/2 max-lg:mx-auto my-auto">
                 <SectionRight>
-                  <p className="lato font-semibold text-3xl text-[#495464]">
+                  <p className="lato font-semibold text-2xl lg:text-3xl text-[#495464] max-lg:pt-5">
                     Weather App (React Build)
                   </p>
-                  <p className="roboto">
+                  <p className="roboto max-lg:text-sm">
                     PropTrac is an all in one property management tool allowing
                     Property Managers to have full control of all their
                     properties no matter where they are listed. The site allows
@@ -532,7 +529,7 @@ export default function Home() {
           <p className="text-5xl text-[#BBBFCA] font-semibold pt-5 ml-20">
             Skills
           </p>
-          <div className="grid grid-cols-3 grid-flow-row mx-20 pt-8 text-white">
+          <div className="grid grid-cols-1 lg:grid-cols-3 grid-flow-row mx-20 pt-8 text-white">
             <div className="col-span-1">
               <p className="text-center text-4xl font-semibold">Front-End</p>
               <Section>
