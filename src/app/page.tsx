@@ -475,18 +475,7 @@ export default function Home() {
                     Weather App (React Build)
                   </p>
                   <p className="roboto max-lg:text-sm">
-                    PropTrac is an all in one property management tool allowing
-                    Property Managers to have full control of all their
-                    properties no matter where they are listed. The site allows
-                    a Property Manager or a Tenant. The property manager has
-                    their dashboard allowing them to see data of their
-                    properties. This application will help managers keep track
-                    of their properties and make it easy to pick what properties
-                    to prioritize. This application is also aiming to allow
-                    users to take payment from their respective Tenants. On the
-                    Tenant dashboard they can keep track of their payments and
-                    are able to send requests in the event that maintenance is
-                    required.
+                    The Weather App is leveraging the OpenWeather API. This project is a React rebuild of a previous vanilla project. This project allows user to see the current weather and 5-day forecast of any place in the world. This project also utilizes Tailwind CSS rather than vanilla CSS.
                   </p>
                   <SectionDelay>
                     <div className="flex space-x-3 pt-3">
