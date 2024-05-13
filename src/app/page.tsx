@@ -100,7 +100,7 @@ export default function Home() {
         <div className="hidden md:block">
         <DesktopNav />
         </div>
-        <div>
+        <div className="block md:hidden">
           <MobileNav/>
         </div>
 
